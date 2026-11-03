@@ -1,0 +1,11 @@
+---
+const { linkTitle, linkDescription, linkUrl } = Astro.props
+---
+
+<a
+  href={linkUrl}
+  class='flex w-full flex-wrap items-center justify-center gap-x-2 gap-y-1 rounded-xl bg-white/20 p-4 text-center text-sm text-white backdrop-blur-lg transition-all duration-500 hover:bg-white/40 hover:scale-105 lg:text-xl'
+>
+  <span class='font-semibold'>{linkTitle}</span>
+  <span>{linkDescription}</span>
+</a>
